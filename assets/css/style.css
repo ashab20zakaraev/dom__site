@@ -452,7 +452,7 @@ input, textarea:focus {
 .about {
     width: 100%;
     padding: 0 0 110px 0;
-    display: none;
+/*    display: none;*/
 }
 
 .about__header {
@@ -854,6 +854,22 @@ input, textarea:focus {
         margin: 50px auto 40px auto;
         background-color: #ECECEC;
     }
+    
+    /* About 
+    ========================*/
+    
+    .about__show {
+        display: none;
+    }
+    
+    .about__content {
+        
+    }
+    
+    .about__slider {
+        flex-wrap: wrap;
+        margin: 63px auto 0 auto;
+    }
 }
 
 /* =============== BreakPoint 1200px ===============*/
@@ -1064,7 +1080,14 @@ input, textarea:focus {
     }
 }
 
-/* =============== BreakPoint 460px ===============*/
+/* =============== BreakPoint 420px ===============*/
+@media (max-width: 420px) {
+    .about__slider {
+        max-width: 197px;
+    }
+}
+
+/* =============== BreakPoint 406px ===============*/
 @media (max-width: 406px) {
     /* Intro 
     ========================*/
@@ -1083,15 +1106,3 @@ input, textarea:focus {
         font-size: 27px;    
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
